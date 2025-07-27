@@ -1,0 +1,23 @@
+from selenium.webdriver.common.by import By
+
+
+choice_bella_tank_loc = (By.CSS_SELECTOR, '[alt="Bella Tank"]')
+text_one_page_loc = (By.LINK_TEXT, 'Bella Tank')
+size_loc = (By.CSS_SELECTOR, '[id="option-label-size-143-item-167"]')
+color_loc = (By.ID, 'option-label-color-93-item-50')
+button_add_to_cart_loc = (By.CSS_SELECTOR, '[title="Add to Cart"]')
+text_two_page_loc = (By.CSS_SELECTOR, '[class="base"]')
+size_text_loc = (By.XPATH, '//span[normalize-space()="S"]')
+color_text_loc = (By.XPATH, '//span[normalize-space()="Blue"]')
+data_bind_loc = (By.CSS_SELECTOR, '[data-bind="html: $parent.prepareMessageForHtml(message.text)"]')
+counter_number_loc = (By.CSS_SELECTOR, '[class="counter-number"]')
+button_add_to_compare_loc = (By.XPATH, '(//a[@title="Add to Compare"])[4]')
+text_two_loc = (By.CSS_SELECTOR, '#compare-items > li > strong > a')
+button_add_wish_list_loc = (By.XPATH, '(//a[@title="Add to Wish List"])[4]')
+login_wait_loc = (By.CSS_SELECTOR, '[name="login[username]"]')
+text_page_login_loc = (By.XPATH, '//span[normalize-space()="Customer Login"]')
+add_email_loc = (By.CSS_SELECTOR, '[name="login[username]"]')
+add_password_loc = (By.CSS_SELECTOR, '[name="login[password]"]')
+button_sign_in_loc = (By.NAME, 'send')
+text_pege_my_wish_list_loc = (By.XPATH, '//span[normalize-space()="My Wish List"]')
+text_add_wish_list_loc = (By.CSS_SELECTOR, '[data-bind="html: $parent.prepareMessageForHtml(message.text)"]')
