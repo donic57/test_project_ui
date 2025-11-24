@@ -11,7 +11,7 @@ from selenium.webdriver.chrome.options import Options
 def driver():
     options = Options()
     options.add_argument('--headless')
-    chrome_driver = webdriver.Chrome()
+    chrome_driver = webdriver.Chrome(options=options)
     chrome_driver.implicitly_wait(5)
     chrome_driver.maximize_window()
     return chrome_driver
