@@ -3,12 +3,15 @@ import pytest
 from pages.customer_account import CustomerAccount
 from pages.sale_page import SalePage
 from pages.eco_friendly_page import EcoFriendlyPage
+from selenium.webdriver.chrome.options import Options
+
 
 
 @pytest.fixture()
 def driver():
-    options = webdriver.ChromeOptions()
-    chrome_driver = webdriver.Chrome(options=options)
+    options = Options()
+    options.add_argument('--headless')
+    chrome_driver = webdriver.Chrome()
     chrome_driver.implicitly_wait(5)
     chrome_driver.maximize_window()
     return chrome_driver
